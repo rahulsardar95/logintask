@@ -1,0 +1,27 @@
+<div class='hero' >
+    <!-- 	<img src='../../assets/images/loginbackground.jpg'>
+     -->	<div class='form-box'>
+            <div class='button-box'>
+    
+                <div id='btn'></div>
+                <button type='button' class='toggle-btn'>Log In</button>
+                <!-- <button type='button' class='toggle-btn btn' (click)="gotoregister()">Register</button> -->
+             </div>
+          
+        <form [formGroup]='loginForm' class='input-group' >
+            <input type='text' class="input-field" placeholder="Email-id" required formControlName='email'> 
+            <input type='text' class="input-field" placeholder="Password" required formControlName='password'> 
+            <div>
+                <input type='checkbox' class='check-box'><span>Remember Password</span>
+            </div>
+            <div  class="input-fields">
+                <button type='submit' class='submit-btn' (click)='login()'>Log In</button>
+            </div>
+            
+        </form>
+    
+        </div>
+        
+    </div>
+    
+    
